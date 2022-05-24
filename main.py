@@ -158,7 +158,7 @@ def step():
     global shapes
     global steps_count
 
-    # https://www.desmos.com/calculator/lazpl4kkqq
+    # https://www.desmos.com/calculator/ryaybj0tdq
     def get_max_size(a, b, c, d):
         output = a * (1 - (steps_count + c) / (b + steps_count + c))
         if output < d:
@@ -173,7 +173,7 @@ def step():
     print(steps_count)
     current_shapes = list()
 
-    max_size = get_max_size(200, 500, 1000, 2)
+    max_size = get_max_size(200, 250, 500, 2)
     shape_count = get_shapes_count(15000, 45000, 1400, 3000)
     print(max_size)
     print(shape_count)
